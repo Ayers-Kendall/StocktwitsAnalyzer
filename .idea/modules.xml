@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../OldProjects/Stock-Analysis-Historic/.idea/Stock-Analysis-Historic.iml" filepath="$PROJECT_DIR$/../OldProjects/Stock-Analysis-Historic/.idea/Stock-Analysis-Historic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../OldProjects/Stock-Analyzer/.idea/Stock-Analyzer.iml" filepath="$PROJECT_DIR$/../OldProjects/Stock-Analyzer/.idea/Stock-Analyzer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/StocktwitsAnalyzer.iml" filepath="$PROJECT_DIR$/.idea/StocktwitsAnalyzer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ML/stock_market_deep_learning/.idea/stock_market_deep_learning.iml" filepath="$PROJECT_DIR$/../ML/stock_market_deep_learning/.idea/stock_market_deep_learning.iml" />
+    </modules>
+  </component>
+</project>
