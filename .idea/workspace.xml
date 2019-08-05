@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbc9553c-4da0-4e1f-a175-fb23143d9512" name="Default Changelist" comment="" />
+    <list default="true" id="cbc9553c-4da0-4e1f-a175-fb23143d9512" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_keys/AlphaVantage_API_keys" beforeDir="false" afterPath="$PROJECT_DIR$/API_keys/AlphaVantage_API_keys" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_keys/IEX_API_keys" beforeDir="false" afterPath="$PROJECT_DIR$/API_keys/IEX_API_keys" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_keys/Intrinio_API_keys" beforeDir="false" afterPath="$PROJECT_DIR$/API_keys/Intrinio_API_keys" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analyzer/globals.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analyzer/globals.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,5 +179,16 @@
       <updated>1564766950200</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
