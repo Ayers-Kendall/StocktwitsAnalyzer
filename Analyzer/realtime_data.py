@@ -146,7 +146,7 @@ def get_data_wtc(ticker_list):      # 250 calls a day, and can get 5 tickers in 
     for ticker in ticker_list:
         tickers_string += str(ticker) + ','
     tickers_string = tickers_string[:-1]    # get rid of comma at the end
-    response = requests.get(__wtc_base_URL + "stock?symbol=" + tickers_string + '&api_token='+__wtc_token)
+    response = requests.get(__wtc_base_URL + "stock?symbol=" + tickers_string + '&api_token='+__wtc_token, timeout=60)
     if response.status_code == 200:
         res_json = json.loads(response.content.decode('utf-8'))
         for ticker_data in res_json['data']:
