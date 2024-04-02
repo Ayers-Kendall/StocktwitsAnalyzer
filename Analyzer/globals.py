@@ -15,37 +15,36 @@ ALPHA_VANTAGE_API_KEYS = []
 IEX_SECRET_KEYS = []
 WTC_API_KEYS = []
 INTRINIO_API_KEYS = []
-
-file = open("../API_keys/AlphaVantage_API_keys", "r")
-for line in file.readlines():
-    try:
-        key = (line[0 : line.index('#')]).trim()
-    except:
-        key = line.trim()
-    ALPHA_VANTAGE_API_KEYS.append(key)
-
-file = open("../API_keys/WorldTradingData_API_keys", "r")
-for line in file.readlines():
-    try:
-        key = (line[0 : line.index('#')]).trim()
-    except:
-        key = line.trim()
-    IEX_SECRET_KEYS.append(key)
-
-file = open("../API_keys/IEX_API_keys", "r")
-for line in file.readlines():
-    try:
-        key = (line[0 : line.index('#')]).trim()
-    except:
-        key = line.trim()
-    WTC_API_KEYS.append(key)
-
-file = open("../API_keys/Intrinio_API_keys", "r")
-for line in file.readlines():
-    try:
-        key = (line[0 : line.index('#')]).trim()
-    except:
-        key = line.trim()
-    INTRINIO_API_KEYS.append(key)
+with open("../API_keys/AlphaVantage_API_keys", "r") as file:
+    for line in file.readlines():
+        try:
+            key = (line[0 : line.index('#')]).trim()
+        except:
+            key = line.trim()
+        ALPHA_VANTAGE_API_KEYS.append(key)
+    
+    file = open("../API_keys/WorldTradingData_API_keys", "r")
+    for line in file.readlines():
+        try:
+            key = (line[0 : line.index('#')]).trim()
+        except:
+            key = line.trim()
+        IEX_SECRET_KEYS.append(key)
+    
+    file = open("../API_keys/IEX_API_keys", "r")
+    for line in file.readlines():
+        try:
+            key = (line[0 : line.index('#')]).trim()
+        except:
+            key = line.trim()
+        WTC_API_KEYS.append(key)
+    
+    file = open("../API_keys/Intrinio_API_keys", "r")
+    for line in file.readlines():
+        try:
+            key = (line[0 : line.index('#')]).trim()
+        except:
+            key = line.trim()
+        INTRINIO_API_KEYS.append(key)
 
 # ---------------------------------------------------------- #
