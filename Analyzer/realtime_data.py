@@ -8,6 +8,7 @@ from alpha_vantage.timeseries import TimeSeries
 import time
 import globals
 import pandas
+from security import safe_requests
 
 ts = TimeSeries(key=globals.ALPHA_VANTAGE_API_KEYS[0], output_format='pandas', indexing_type='date')
 #ts2 = TimeSeries(key=globals.ALPHA_VANTAGE_API_KEYS[1], output_format='pandas', indexing_type='date')
@@ -138,7 +139,7 @@ def get_data_iex(ticker):
     batch.get_price()
 
 def get_data_wtc(ticker_list):      # 250 calls a day, and can get 5 tickers in one call :( website says 500 per call. Only $16 a month for 50,000 and 50 per
-    import json, requests
+    import json
     from pprint import pprint
     __wtc_base_URL = 'https://api.worldtradingdata.com/api/v1/'
     __wtc_token = globals.WTC_API_KEY
@@ -146,7 +147,7 @@ def get_data_wtc(ticker_list):      # 250 calls a day, and can get 5 tickers in 
     for ticker in ticker_list:
         tickers_string += str(ticker) + ','
     tickers_string = tickers_string[:-1]    # get rid of comma at the end
-    response = requests.get(__wtc_base_URL + "stock?symbol=" + tickers_string + '&api_token='+__wtc_token)
+    response = safe_requests.get(__wtc_base_URL + "stock?symbol=" + tickers_string + '&api_token='+__wtc_token)
     if response.status_code == 200:
         res_json = json.loads(response.content.decode('utf-8'))
         for ticker_data in res_json['data']:
